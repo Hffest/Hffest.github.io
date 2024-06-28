@@ -1,6 +1,6 @@
 ## 介绍
 
-我的在线简历，[点击这里](https://iseexuhs.github.io/cv-cn/)访问。
+我的在线简历，[点击这里](https://Hffest.github.io/cv-cn/)访问。
 
 ## Theme
 
