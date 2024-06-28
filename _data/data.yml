@@ -1,0 +1,296 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output. 
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: 许红升
+    tagline: 电子工程在读博士生
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: iseexuhs@zju.edu.cn
+    phone: (+86) 1825816****
+    website: iseex.github.io #do not add http://
+    linkedin: iseex
+    github: iseex
+    gitlab:
+    bitbucket:
+    twitter: '@iseexuhs'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+
+    languages:
+      - idiom: 中文
+        level: Native
+
+      - idiom: 英文
+        level: 六级
+
+     # - idiom: Spanish
+     #  level: Professional
+
+    interests:
+      - item: 羽毛球
+        link:
+
+      - item: 摄影
+        link:
+
+      - item: 烹饪
+        link:
+
+career-profile:
+    title: 个性标语
+    summary: |
+      浙江大学电子工程学在读博士生，从事微纳电子器件、柔性电子、声表面波传感器研究，获得博士生国家奖学金等荣誉。
+      运营微信公众号“青柠学术”，记录自己的技术进阶历程。
+
+education:
+    - degree: 博士学位，电子科学与技术
+      university: 浙江大学 (ZJU)
+      time: 2016 - 2021
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+
+          - Bullet point
+          - Bullet point
+
+    - degree: 学士学位，通信工程
+      university: 安徽大学 (AHU)
+      time: 2012 - 2016
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+
+          - Bullet point
+          - Bullet point
+
+experiences:
+    - role: 研究成员
+      time: 08/2017 - 01/2018
+      company: 浙江大学，杭州
+      details: |
+        基于LiNbO<sub>3</sub>单晶薄膜的柔性声表面波（SAW）应变传感器
+
+          - 首次提出基于LiNbO<sub>3</sub>单晶薄膜的柔性SAW应变传感器。
+          - 具有3000 ustrain的应变传感范围，和193 Hz/ustrain 的高灵敏度，器件稳定性好。
+          - 具有两个振动模式，可实现多参数传感和解耦，及温度补偿。
+          - 利用弹性理论和微扰理论分析传感器的应变特性。
+
+    - role: 研究成员
+      time: 03/2018 - Present
+      company: 浙江大学，杭州
+      details: |
+        基于LiNbO<sub>3</sub>单晶薄膜的柔性声表面波（SAW）压强传感器
+
+          - 利用LiNbO<sub>3</sub>薄膜的超薄特性，提高SAW压强传感器的灵敏度。
+          - 理论计算和仿真分析不同diaphragm形状对传感器灵敏度和屈服强度的影响。
+
+    - role: 算法开发
+      time: 11/2015 - 06/2016
+      company: 国家电网，合肥
+      details: |
+        电力通信网络优化及拓扑生成算法
+
+          - 基于MATLAB平台，开发了电力通信网络结构优化及拓扑生成算法。
+          - 建立图论数学模型，将实际网络的物理模型转换为计算模型。
+          - 承担了方案设计、算法开发、专利及论文撰写等任务。
+
+    - role: 嵌入式开发
+      time: 05/2015 - 08/2016
+      company: 安徽大学，合肥
+      details: |
+        基于ARM的宿舍安全监控系统
+
+          - 使用ARM Cortex - M4内核MCU开发了用于安全监控的信号传感和控制系统。
+          - 承担了硬件设计和无线传感算法开发等任务。
+
+honors:
+    title: 奖励 &amp; 荣誉
+    # intro: >
+    #   You can list your side projects or open source libraries in this
+    #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+
+    assignments:
+      - title: 2019
+        # link: "#hook"
+        tagline: "国家奖学金，浙江大学"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "三好学生，浙江大学"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "优秀研究生，浙江大学"
+
+      - title: 2018
+        # link: "#hook"
+        tagline: "优秀研究生，浙江大学"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "校级优秀团员，浙江大学"
+
+      - title: 2016
+        # link: "#"
+        tagline: "省级优秀毕业生，安徽大学"
+
+      - title: <font color="white">2016</font>
+        # link: "#"
+        tagline: "优秀学士学位论文，安徽大学"
+
+      - title: 2015
+        # link: "#"
+        tagline: "二等奖，全国大学生电子设计大赛安徽赛区"
+
+      - title: <font color="white">2015</font>
+        # link: "#"
+        tagline: "学习优秀三等奖学金，安徽大学"
+
+      - title: 2014
+        # link: "#"
+        tagline: "优秀学生奖学金，安徽大学"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "学术科技奖学金，安徽大学"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "一等奖，安徽省电子设计竞赛"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "三等奖，全国航空航天模型大赛科技创意组"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "优秀结题，大学生创新创业训练项目"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "一等奖，安徽省无线电测向144 MHz"
+
+      - title: <font color="white">2014</font>
+        # link: "#"
+        tagline: "团体冠军，安徽省无线电测向竞赛"
+
+      - title: 2013
+        # link: "#"
+        tagline: "学术科技奖学金，安徽大学"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "国元奖学金，安徽大学"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "社会实践奖学金，安徽大学"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "社会实践先进个人，安徽大学"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "社会实践校级优秀团队，安徽大学"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "二等奖，全国无线电测向竞赛"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "一等奖，安徽省无线电测向144 MHz"
+
+      - title: <font color="white">2013</font>
+        # link: "#"
+        tagline: "团体冠军，安徽省无线电测向144 MHz"
+
+
+publications:
+    title: 论文 &amp; 专利
+    # intro: |
+    #   You can list your publications in this section. Lorem ipsum dolor sit
+    #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    #   bibendum fringilla a eu lectus.
+
+    papers:
+      - title: Flexible dual-mode surface acoustic wave strain sensor based on crystalline LiNbO3 thin film [J]
+        authors: H.S. Xu, Z. Cao, S.R. Dong, J.K. Chen, et. al.
+        conference: "J. Micromech. Microeng. 29, 025003 (2018)."
+
+      - title: Flexible surface acoustic wave strain sensor based on single crystalline LiNbO<sub>3</sub> thin film [J]
+        authors: H.S. Xu, S.R. Dong, W.P. Xuan, et. al.
+        conference: "Applied Physics Letters 112, 093502 (2018)."
+
+      - title: 电力通信网络结构优化及拓扑生成算法 [J]
+        authors: 李周, 许红升, 叶彬
+        conference: "电气自动化, 2017, 39(5):20-23."
+
+      - title: 基于薄膜体声波传感器的无线无源测试系统及测试方法 [P]
+        authors: 董树荣，许红升, 轩伟鹏, 骆季奎, 乌玛·儒可
+        conference: "CN107727125B, 2019-06-18, 授权"
+
+      - title: 一种用于调整火箭发射平台倾角的控制系统及控制方法 [P]
+        authors: 黄林生, 李斌, 许红升, 张香倩, 黄文江, 黄震, 张东彦, 赵晋陵
+        conference: "CN104634165A, 2016-05-11, 授权"
+
+      - title: 一种基于声表面波驱动的液体中运动的微型推进器及其制备方法 [P]
+        authors: 董树荣，赵嵩，许红升, 金浩，郭维，骆季奎
+        conference: " CN110217367A, 2019-05-13, 受理. "
+
+      - title: 一种基于声致微流的冷冻防护剂导入去除微系统和方法、及细胞的低温保存方法 [P]
+        authors: 乌玛·儒可，许红升, 董树荣，轩伟鹏，陈金凯，骆季奎
+        conference: " CN110217367A, 2019-05-13, 受理. "
+
+      - title: 一种基于单晶压电薄膜的体声波谐振器及其制备方法 [P]
+        authors: 董树荣，许红升, 轩伟鹏, 骆季奎, 乌玛·儒可
+        conference: "CN107342748A, 2017-11-10. "
+
+      - title: 一种用于生成SDH电力通信传输网络多层拓扑结构的算法 [P]
+        authors: 李周, 叶彬，葛斐, 荣秀婷, 徐强, 许红升
+        conference: "CN106533732A, 2017-03-22. "
+
+
+skills:
+    title: 技能 &amp; 熟练程度
+
+    toolset:
+      - name: C
+        level: 98%
+
+      - name: MATLAB
+        level: 98%
+
+      - name: Altium Designer
+        level: 98%
+
+      - name: SketchUp & SolidWorks
+        level: 90%
+
+      - name: LaTeX
+        level: 80%
+
+      - name: HTML5 & CSS
+        level: 60%
+
+      - name: Python
+        level: 30%
+
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">x.h.s</a>
