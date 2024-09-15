@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人文档记录</title>
+    <title>个人主页</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <div class="container">
-        <h1>每日文档记录</h1>
-        <ul id="doc-list">
-            <li><a href="docs/2024-09-14.html" class="doc-link">2024-09-14</a></li>
-            <li><a href="docs/2024-09-13.html" class="doc-link">2024-09-13</a></li>
-            <li><a href="docs/2024-09-12.html" class="doc-link">2024-09-12</a></li>
-            <!-- 添加更多日期 -->
-        </ul>
+        <!-- 左侧导航栏 -->
+        <nav class="sidebar">
+            <h2>文档记录</h2>
+            <ul>
+                <li><a href="docs/2024-09-14.html" class="doc-link">2024-09-14</a></li>
+                <li><a href="docs/2024-09-13.html" class="doc-link">2024-09-13</a></li>
+                <li><a href="docs/2024-09-12.html" class="doc-link">2024-09-12</a></li>
+                <!-- 更多日期 -->
+            </ul>
+        </nav>
+
+        <!-- 右侧主内容 -->
+        <main class="content">
+            <section class="welcome-section">
+                <h1>欢迎来到我的主页</h1>
+                <p>记录每天的生活和分享美图。</p>
+                <img src="images/christmas.svg" alt="欢迎图片" class="vector-image">
+            </section>
+
+            <section class="gallery-section">
+               
+                <div class="gallery">
+                    <img src="images/gallery1.svg" alt="图片1" class="gallery-img">
+                    <img src="images/gallery2.svg" alt="图片2" class="gallery-img">
+                </div>
+            </section>
+        </main>
     </div>
 
-   
+    <script src="scripts/main.js"></script>
 </body>
 </html>
+

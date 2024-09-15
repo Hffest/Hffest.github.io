@@ -1,58 +1,154 @@
 /* 全局样式 */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+/* Flex 布局 */
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
-.container {
-    max-width: 600px;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* 左侧导航栏 */
+.sidebar {
+    width: 250px;
+    background-color: #2d2d2d;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-/* 标题样式 */
-h1 {
-    font-size: 2rem;
-    color: #333;
+.sidebar:hover {
+    transform: translateX(10px);
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
-/* 无序列表样式 */
-ul {
+.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* 每个列表项 */
-li {
-    margin: 10px 0;
+.sidebar ul li {
+    margin: 15px 0;
 }
 
-/* 链接样式 */
-a.doc-link {
+.sidebar ul li a {
     text-decoration: none;
-    padding: 15px 20px;
-    display: inline-block;
-    background: linear-gradient(135deg, #007BFF, #00D4FF);
     color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
-    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    display: block;
+    background-color: #444;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
-/* 悬停时的动画效果 */
-a.doc-link:hover {
-    background: linear-gradient(135deg, #0056b3, #00a8d4);
-    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
-    transform: translateY(-3px);
+.sidebar ul li a:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 右侧主内容 */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    overflow-y: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 欢迎部分 */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #007BFF, #00D4FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.vector-image {
+    max-width: 300px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    position: relative;
+    z-index: 1;
+}
+
+/* 背景图，防止遮盖文字 */
+.welcome-section::before {
+    content: "";
+    background-image: url('images/vector.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; /* 降低背景图的透明度 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* 使背景图在文字后面 */
+}
+
+/* 美图展示 */
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
