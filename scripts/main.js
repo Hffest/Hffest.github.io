@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 动态添加一个新的日期链接
-    var docList = document.getElementById('doc-list');
-    var newDocItem = document.createElement('li');
-    newDocItem.innerHTML = '<a href="docs/2024-09-15.html">2024-09-15</a>';
-    docList.appendChild(newDocItem);
+    // 点击链接后的炫酷效果
+    const links = document.querySelectorAll('.doc-link');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // 防止页面立即跳转
+            document.body.style.transition = "background 0.5s ease";
+            document.body.style.background = "#007BFF";
+            
+            setTimeout(() => {
+                window.location.href = link.href;
+            }, 500); // 延迟跳转
+        });
+    });
 });

@@ -129,8 +129,8 @@ body {
 }
 
 .gallery-img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
