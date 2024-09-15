@@ -7,9 +7,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Flex 布局 */
 .container {
     display: flex;
+    flex-direction: row;
     height: 100vh;
 }
 
@@ -21,10 +21,6 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-}
-
-.sidebar:hover {
-    transform: translateX(10px);
 }
 
 .sidebar h2 {
@@ -92,7 +88,7 @@ body {
 }
 
 .vector-image {
-    max-width: 300px;
+    max-width: 100%;
     margin-top: 20px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
@@ -126,15 +122,17 @@ body {
 .gallery {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* 使图片能够换行 */
 }
 
 .gallery-img {
-    width: 400px;
-    height: 400px;
+    width: 30%;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .gallery-img:hover {
@@ -150,5 +148,41 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .gallery-img {
+        width: 100%; /* 每张图片占满宽度 */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-section h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-section p {
+        font-size: 1rem;
+    }
+    
+    .gallery-img {
+        width: 100%; /* 手机屏幕上每张图片占据100%的宽度 */
     }
 }
